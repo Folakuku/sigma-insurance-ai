@@ -13,7 +13,7 @@ document.getElementById("buy-insurance-form").addEventListener("submit", async (
         applicationDate: formData.get("start-date")
     };
 
-    const response = await fetch('http://localhost:3000/api/applications', {
+    const response = await fetch('https://ai-personalized-email.onrender.com/email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
